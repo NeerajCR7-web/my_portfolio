@@ -1,125 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="background-image"></div>
-        <div class="floating-bubbles"></div>
-        <div class="floating-shapes"></div>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="background-image"></div>
+    <div class="floating-bubbles"></div>
+    <div class="floating-shapes"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo animate__animated animate__fadeIn">
+        <i class="fas fa-code"></i> My<span>Portfolio</span>
+      </a>
+      <ul class="nav-links">
+        <li>
+          <a href="#home" class="nav-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">
+            <i class="fas fa-project-diagram"></i> Projects
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">
+            <i class="fas fa-laptop-code"></i> Skills
+          </a>
+        </li>
+        <li>
+          <a href="#activities" class="nav-link">
+            <i class="fas fa-running"></i> Activities
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo animate__animated animate__fadeIn">
-                <i class="fas fa-code"></i> My<span>Portfolio</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i> Skills</a></li>
-                <li><a href="#activities" class="nav-link"><i class="fas fa-running"></i> Activities</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate__animated animate__fadeInDown">
+          Hi, I’m
+          <span class="animate__animated animate__pulse animate__infinite"
+            >Neeraj</span
+          >
+        </h1>
+        <div class="dynamic-text-container">
+          <p class="typing-animation">
+            I’m a passionate developer creating amazing web experiences
+          </p>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="animate__animated animate__fadeInDown">
-                    Hi, I'm <span class="animate__animated animate__pulse animate__infinite">Neeraj</span>
-                </h1>
-                <div class="dynamic-text-container">
-                    <p class="typing-animation">I'm a passionate developer creating amazing web experiences</p>
-                </div>
-                <div class="social-icons">
-                    <a href="#" class="social-icon animate__animated animate__bounceIn" style="animation-delay: 0.2s">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-icon animate__animated animate__bounceIn" style="animation-delay: 0.4s">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-icon animate__animated animate__bounceIn" style="animation-delay: 0.6s">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon animate__animated animate__bounceIn" style="animation-delay: 0.8s">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <a href="#projects" class="btn pulse animate__animated animate__fadeInUp animate__delay-1s">
-                    View My Work <i class="fas fa-arrow-down arrow-icon"></i>
-                </a>
-            </div>
-            <div class="hero-image">
-                <div class="image-container animate__animated animate__zoomIn">
-                    <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
-                    <div class="image-border animate__animated animate__pulse animate__infinite"></div>
-                </div>
-            </div>
+        <!-- Updated Social Icons -->
+        <div class="social-icons">
+          <a
+            href="https://github.com/yourusername"
+            class="social-icon animate__animated animate__bounceIn"
+            style="animation-delay: 0.2s"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/yourusername"
+            class="social-icon animate__animated animate__bounceIn"
+            style="animation-delay: 0.4s"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://twitter.com/yourusername"
+            class="social-icon animate__animated animate__bounceIn"
+            style="animation-delay: 0.6s"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://instagram.com/yourusername"
+            class="social-icon animate__animated animate__bounceIn"
+            style="animation-delay: 0.8s"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </section>
+        <!-- End Social Icons -->
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title animate__animated animate__fadeIn">My Projects</h2>
-            <div class="projects-grid">
-                <!-- Projects loaded via JS -->
-            </div>
+        <a
+          href="#projects"
+          class="btn pulse animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          View My Work <i class="fas fa-arrow-down arrow-icon"></i>
+        </a>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-container animate__animated animate__zoomIn">
+          <img
+            src="assets/images/profile.jpg"
+            alt="Profile Picture"
+            class="profile-img"
+          />
+          <div
+            class="image-border animate__animated animate__pulse animate__infinite"
+          ></div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title animate__animated animate__fadeIn">My Skills</h2>
-            <div class="skills-container">
-                <!-- Skills loaded via JS -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Activities Section -->
-    <section id="activities" class="activities">
-        <div class="container">
-            <h2 class="section-title animate__animated animate__fadeIn">Extracurricular Activities</h2>
-            <div class="activities-list">
-                <!-- Activities loaded via JS -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="animate__animated animate__fadeIn">
-        <div class="container">
-            <p>&copy; 2025 Neeraj's Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Floating Action Button -->
-    <div class="fab animate__animated animate__bounceInUp animate__delay-2s">
-        <i class="fas fa-comment"></i>
+      </div>
     </div>
+  </section>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/crud.js"></script>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">
+        My Projects
+      </h2>
+      <div class="projects-grid">
+        <!-- Projects loaded via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">
+        My Skills
+      </h2>
+      <div class="skills-container">
+        <!-- Skills loaded via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="activities">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">
+        Extracurricular Activities
+      </h2>
+      <div class="activities-list">
+        <!-- Activities loaded via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="animate__animated animate__fadeIn">
+    <div class="container">
+      <p>© 2025 Neeraj’s Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button -->
+  <div class="fab animate__animated animate__bounceInUp animate__delay-2s">
+    <i class="fas fa-comment"></i>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/crud.js"></script>
 </body>
 </html>
