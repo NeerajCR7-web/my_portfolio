@@ -711,7 +711,35 @@ footer {
 .animate__pulse {
     color: #222 !important;
 }
-
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+  }
+  .contact .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font: inherit;
+  }
+  .contact-form .btn {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.75rem 2rem;
+  }
+  
 /* Pulse Animation for Auth Indicator */
 @keyframes pulse {
     0% {
