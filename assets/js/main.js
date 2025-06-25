@@ -1,8 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Sample data - in a real app, this would come from a database
     const projects = [
-        {
+         {
             id: 1,
+            title: "Kicktastic (Capstone Project)",
+            description: "Kicktastic is a CMS-based web application designed to manage local soccer tournaments.",
+            image: "logo.png",
+            tags: ["PHP CMS","HTML", "CSS", "JavaScript"],
+            demoLink: "https://codeneeraj.free.nf/kicktastic/",
+            codeLink: "https://github.com/NeerajCR7-web/Kicktastic"
+        },
+        {
+            id: 2,
             title: "Ontario Parks Project",
             description: "Designed and developed a web-based application aimed at increasing year-round engagement with Ontario Parks, addressing the challenge they are facing.",
             image: "project-1.png",
@@ -11,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             codeLink: "https://github.com/NeerajCR7-web/ixd-project"
         },
         {
-            id: 2,
+            id: 3,
             title: "BallonDor Award Management  System",
             description: "It is a web-based content management system (CMS) designed to facilitate the organization and management of the prestigious Ballon d'Or awards.",
             image: "project-2.jpg",
@@ -21,30 +30,25 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
         {
-            id: 3,
+            id: 4,
             title: "Smart Gesture Gloves",
             description: "•	Designed and developed Arduino-based smart gloves that translated hand gestures into real-time text and audio output, enabling non-verbal individuals (especially those with speech disabilities) to communicate more effectively.",
             image: "project-3.png",
             tags: ["Arduino Nano", "Flex Sensors", "Accelerator", "Bluetooth Module"],
-            demoLink: "#",
-            codeLink: "#"
         },
         {
-            id: 4,
+            id: 5,
             title: "Line Follower Robot",
             description: "A Line Follower Robot is an autonomous vehicle designed to detect and follow a pre-defined path using infrared or optical sensors. It is commonly used to demonstrate basic robotics, sensor integration, and control systems.",
             image: "project-4.jpeg",
             tags: ["Arduino UNO", "IR Sensors", "Motor Drivers"],
-            demoLink: "#",
-            codeLink: "#"
         },
         {
-            id: 5,
+            id: 6,
             title: "Crypto Analyzer",
             description: "A web application that displays cryptocurrency market data and related news articles in one place, providing investors with valuable insights.",
             image: "project-5.png",
             tags: ["Express.js", "API", "CORS middleware", "CSS3"],
-            demoLink: "#",
             codeLink: "https://github.com/NeerajCR7-web/crypto-analyzer"
         }
     ];
