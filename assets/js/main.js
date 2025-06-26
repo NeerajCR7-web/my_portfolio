@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const activities = [
         {
-            title: "Student Peer Mentor",
-            date: "Dec 2024 - Present",
+            title: "Student Peer Mentor (Humber College)",
+            date: "Dec 2024 - April 2025",
             description: "Organized and led interactive mentorship sessions, helping new students transition smoothly into college life and succeed academically."
         },
         {
@@ -94,11 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "Sept 2019",
             description: "Led the university attain the second runners-up position in Nationals.."
         },
-        {
-            title: "Open Source Contributor",
-            date: "2020 - Present",
-            description: "Contributed to various open-source projects, helping to improve documentation and fix bugs."
-        }
+      
     ];
 
     // Load projects
