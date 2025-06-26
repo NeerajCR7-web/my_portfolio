@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const skills = [
+         {
+            name: "Fullstack Development",
+            description: "Proficient in both frontend and backend development, building complete web applications from UI to database.",
+            icon: "fas fa-laptop-code"
+        },
         {
             name: "Frontend Development",
             description: "Building responsive and interactive user interfaces",
