@@ -817,6 +817,16 @@ footer {
 /* Darken the pulsing name */
 .animate__pulse {
     color: #222 !important;
+
+}
+h2,
+.section-title,
+.about-me h2,
+.education h2 {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Contact Section */
 .contact {
