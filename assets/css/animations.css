@@ -106,6 +106,8 @@
     min-height: 60px;
     margin-bottom: 30px;
     position: relative;
+      width: 100%;
+  overflow-x: auto;
 }
 
 .typing-animation {
@@ -114,6 +116,12 @@
     white-space: nowrap;
     border-right: 3px solid var(--primary-color);
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+     white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+  font-size: clamp(1rem, 4vw, 1.25rem); /* Responsive font */
 }
 
 @keyframes typing {
