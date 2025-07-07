@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Third Runners-up in National Soccer Tournament",
             date: "Sept 2019",
-            description: "Led the university attain the second runners-up position in Nationals.."
+            description: "Contributed to the university’s achievement of securing the second runners-up position at the national level"
         },
       
     ];
