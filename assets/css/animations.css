@@ -106,7 +106,9 @@
     min-height: 60px;
     margin-bottom: 30px;
     position: relative;
-      width: 100%;
+        width: 100%;
+  padding: 0 10px;
+
   overflow-x: auto;
 }
 
@@ -116,12 +118,14 @@
     white-space: nowrap;
     border-right: 3px solid var(--primary-color);
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-     white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+      white-space: normal;      /* Allow text to wrap */
+  overflow: visible;        /* Prevent clipping */
+  word-break: break-word;   /* Break long words if needed */
+  font-size: 1.2rem;        /* Adjust as needed */
+  line-height: 1.5;
   max-width: 100%;
   display: block;
-  font-size: clamp(1rem, 4vw, 1.25rem); /* Responsive font */
+  text-align: left; 
 }
 
 @keyframes typing {
