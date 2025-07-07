@@ -812,6 +812,14 @@ footer {
 /* Darken the typing animation text */
 .typing-animation {
     color: #333;
+    white-space: normal;      /* Allow text to wrap */
+  overflow: visible;        /* Prevent clipping */
+  word-break: break-word;   /* Break long words if needed */
+  font-size: 1.2rem;        /* Adjust as needed */
+  line-height: 1.5;
+  max-width: 100%;
+  display: block;
+  text-align: left; 
 }
 
 /* Darken the pulsing name */
