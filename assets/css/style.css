@@ -811,15 +811,19 @@ footer {
 
 /* Darken the typing animation text */
 .typing-animation {
-    color: #333;
-    white-space: normal;      /* Allow text to wrap */
-  overflow: visible;        /* Prevent clipping */
-  word-break: break-word;   /* Break long words if needed */
-  font-size: 1.2rem;        /* Adjust as needed */
-  line-height: 1.5;
+  .typing-animation {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #333;
+  white-space: normal; /* allow text to wrap */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  width: 100%;
   max-width: 100%;
-  display: block;
-  text-align: left; 
+  line-height: 1.5;
+  text-align: center;
+}
+
 }
 
 /* Darken the pulsing name */
@@ -992,9 +996,10 @@ h2,
     section h2 {
         font-size: 2rem;
     }
-     .typing-animation {
+     
+  .typing-animation {
     font-size: 1rem;
-    
+    text-align: center;
   }
 
   .hero-content h1 {
