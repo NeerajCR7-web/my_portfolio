@@ -811,17 +811,16 @@ footer {
 
 /* Darken the typing animation text */
 .typing-animation {
-   
-  display: inline-block;
+  display: block;
   font-size: 1.2rem;
   color: #333;
-  white-space: normal; /* allow text to wrap */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  white-space: normal;        /* Allow wrapping */
+  overflow-wrap: break-word;  /* Wrap long words */
+  word-break: break-word;     /* Break very long words if needed */
   width: 100%;
   max-width: 100%;
-  line-height: 1.5;
   text-align: center;
+  line-height: 1.5;
 }
 
 
@@ -888,6 +887,11 @@ h2,
     line-height: 1.6;
     color: #555;
   }
+  .dynamic-text-container {
+  width: 100%;
+  overflow-x: hidden;   /* Prevent horizontal scroll */
+}
+
   
 /* Pulse Animation for Auth Indicator */
 @keyframes pulse {
@@ -997,7 +1001,7 @@ h2,
         font-size: 2rem;
     }
      
-  .typing-animation {
+   .typing-animation {
     font-size: 1rem;
     text-align: center;
   }
